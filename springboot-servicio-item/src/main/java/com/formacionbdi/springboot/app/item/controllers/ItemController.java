@@ -41,7 +41,7 @@ public class ItemController {
 	@GetMapping("/ver/{id}/cantidad/{cantidad}")
 	public Item detalle(@PathVariable Long id, @PathVariable Integer cantidad) {
 		return cbFactory.create("items")
-				.run(()-> itemService.findById(id, cantidad), e -> metodoAlternativo(id, cantidad));
+				.run(()-> itemService.findById(id, cantidad), e -> metodoAlternativo(id, cantidad, e));
 	}
 	
 	public Item metodoAlternativo( Long id, Integer cantidad, Throwable e) {
