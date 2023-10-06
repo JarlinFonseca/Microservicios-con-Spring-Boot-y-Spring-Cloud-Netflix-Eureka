@@ -18,9 +18,9 @@ public class SpringbootServicioItemApplication {
 
 	public static void main(String[] args) {
 		   SpringApplication app = new SpringApplication(SpringbootServicioItemApplication.class);
-	        app.setDefaultProperties(Collections
-	          .singletonMap("server.port", "8002"));
-	        app.run(args);
+			 app.setDefaultProperties(Collections .singletonMap("server.port", "8002"));
+			 app.run(args);
+			
 	}
 
 }
